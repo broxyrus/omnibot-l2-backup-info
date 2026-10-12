@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about OmniBot L2 Backup, a private, owner-operated Google Drive backup utility.">
+  <title>OmniBot L2 Backup</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.65; }
+    body { max-width: 740px; margin: 0 auto; padding: 48px 24px; color: #182735; background: #f8fafc; }
+    h1,h2 { line-height: 1.2; letter-spacing: -.02em; }
+    h1 { margin-bottom: 8px; font-size: clamp(2rem, 5vw, 3rem); }
+    h2 { margin-top: 32px; font-size: 1.25rem; }
+    a { color: #145ca5; text-underline-offset: 3px; }
+    .eyebrow, footer { color: #526373; font-size: .9rem; }
+    .intro { font-size: 1.15rem; }
+    nav { margin: 24px 0 36px; padding-bottom: 20px; border-bottom: 1px solid #cbd5df; }
+    nav a { margin-right: 20px; }
+    code { overflow-wrap: anywhere; }
+    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #cbd5df; }
+    @media (prefers-color-scheme: dark) { body { color: #e5edf5; background: #101923; } a { color: #8fc5ff; } .eyebrow,footer { color: #a4b6c6; } nav,footer { border-color: #354555; } }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">PRIVATE, OWNER-OPERATED UTILITY</p>
+    <h1>OmniBot L2 Backup</h1>
+    <p class="intro">A personal utility for backing up owner-controlled data archives to the owner's Google Drive account.</p>
+  </header>
+  <nav aria-label="Information pages">
+    <a href="privacy.html">Privacy policy</a>
+    <a href="#terms">Terms of use</a>
+    <a href="https://github.com/broxyrus/omnibot-l2-backup-info/issues">Contact</a>
+  </nav>
+  <main>
+    <h2>What the utility does</h2>
+    <p>The utility uploads archive files and verification metadata to a dedicated folder in the owner's Google Drive. It reads uploaded files back to verify their contents against local checksums. Configured local retention is permitted only after successful verification.</p>
+    <p>This is a backup utility, not a public trading service. It does not place orders, transfer funds, or require exchange trading credentials.</p>
+    <h2>Google account access</h2>
+    <p>Google authorization uses the limited <code>drive.file</code> permission. The utility is intended to access files it creates, or files explicitly made available to it, rather than the entire Google Drive. It does not request Gmail, Contacts, or Google Docs permissions.</p>
+    <p>Authorization is given by the account owner through Google's sign-in and consent process. The owner can revoke it in their Google Account settings.</p>
+    <h2>Private archives stay private</h2>
+    <p>The public website and its repository contain informational pages only. They do not contain application source code, credentials, archive files, or trading records. Backups are stored in the owner's private Google Drive; this website does not provide access to them.</p>
+    <h2 id="terms">Terms of use</h2>
+    <p>The utility is intended solely for the owner's personal use. These pages are informational and do not offer a public signup, storage service, investment service, or financial advice. The owner controls authorization, backup destinations, and retention settings.</p>
+    <p>Do not submit passwords, access tokens, API keys, or private files through GitHub issues. Use issues only for non-confidential questions about these public information pages.</p>
+  </main>
+  <footer>Last updated: 12 October 2026 · <a href="privacy.html">Privacy policy</a></footer>
+</body>
+</html>
